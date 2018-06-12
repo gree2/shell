@@ -1,0 +1,14 @@
+*.csv
+*.dat
+*.doc
+*.docx
+*.jpeg
+*.jpg
+*.png
+*.pyc
+*.xls
+.DS_Store
+.ipynb_checkpoints/
+data/
+egg-info/
+node_modules/
