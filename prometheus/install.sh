@@ -19,8 +19,8 @@
 # 2. start prometheus
 # ###############################################
 # pdsh -w node1 -l root 'pkill -f prometheus'
-# pdsh -w node1 -l root 'cd /data/deploy/prometheus/prometheus-2.3.0.linux-amd64/ && ./prometheus --config.file=prometheus.yml > prometheus.log 2>&1 &'
-pdsh -w node1 -l root 'ps aux | grep prometheus'
+pdsh -w node1 -l root 'cd /data/deploy/prometheus/prometheus-2.3.0.linux-amd64 && nohup ./prometheus --config.file=prometheus.yml > prometheus.log 2>&1 &'
+# pdsh -w node1 -l root 'ps aux | grep prometheus'
 # ###############################################
 
 
