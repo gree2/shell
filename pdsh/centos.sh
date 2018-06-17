@@ -38,8 +38,8 @@
 # ###############################################
 # 4. install docker-compose
 # ###############################################
-# pdsh -w node[1-4] -l root 'pip install --upgrade pip'
-# pdsh -w node[1-4] -l root 'pip freeze | grep docker'
-# pdsh -w node[1-4] -l root 'pip install docker-compose'
-# pdsh -w node[1-4] -l root 'pip freeze | grep docker'
+pdsh -w node[1-4] -l root 'pip install --upgrade pip'
+pdsh -w node[1-4] -l root 'pip freeze | grep docker'
+pdsh -w node[1-4] -l root 'pip install docker-compose'
+pdsh -w node[1-4] -l root 'pip freeze | grep docker'
 # ###############################################
